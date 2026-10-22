@@ -1,0 +1,38 @@
+ESTAMPARTE CONTROL V5 - PAQUETE COMPLETO
+
+ANTES DE ACTUALIZAR: Abre tu versión V4 y descarga un respaldo JSON. No borres tu app anterior hasta verificar tus datos.
+
+SUBIR A GITHUB:
+1. Descomprime este ZIP.
+2. En GitHub, abre tu repositorio de Estamparte Control y reemplaza TODOS los archivos por los de este paquete.
+3. Comprueba que index.html esté en la raíz del repositorio (no dentro de una carpeta).
+4. Confirma los cambios (Commit changes). Conserva la configuración Settings > Pages > main / (root).
+5. Abre la misma dirección de GitHub Pages en Safari y actualiza. Si no aparecen los cambios, cierra la app y abre Safari otra vez.
+6. Abre Respaldo y usa Restaurar para cargar un archivo de respaldo compatible si no aparecen tus datos.
+
+ADVERTENCIA DE MIGRACIÓN:
+V5 conserva la misma base de datos IndexedDB que V4 cuando se usa la misma dirección de GitHub Pages y el mismo navegador. No necesitas importar datos en ese caso. Si instalas en otra URL o dispositivo, usa el respaldo JSON de V4. Se incluye conversión básica para respaldos antiguos con arreglo docs; si aparece un error, conserva el respaldo.
+
+FUNCIONES:
+- Clientes, cotizaciones y notas de venta, artículos, IVA, tallas, 2 imágenes, impresión/Guardar como PDF del navegador.
+- Anticipos y abonos, gastos manuales, informes semanales y mensuales.
+- Agenda mensual y seguimiento por pedido.
+- Orden de surtido por prenda, color, categoría, tallas, cantidades y costo unitario obligatorio.
+- Un único check de compra por pedido. Registra o revierte un gasto automático vinculado al pedido, sin duplicarlo.
+- Avisos al abrir la app para compras pendientes con entrega en 3 días o menos (NO notificaciones push con la app cerrada).
+- Respaldos JSON locales.
+
+NOTAS:
+- Si ya registraste un gasto manual de una compra, evita marcarla como compra automática sin corregir antes el gasto manual para no duplicar importes.
+- El botón PDF/Imprimir usa la función de impresión de Safari/Chrome. En iPhone, Compartir > Imprimir y guardar la vista previa como PDF.
+- El almacenamiento es local y no sincroniza celulares. Haz respaldos frecuentes.
+- Prueba con pedidos ficticios antes de utilizarla en producción.
+
+NOVEDADES V5:
+- PDF / impresión de nota de venta con historial de anticipos y abonos, total abonado y saldo pendiente.
+- Modificar o eliminar abonos desde el detalle del pedido; los reportes se recalculan.
+- Editar pedido, artículos y tallas desde Detalle > Editar pedido y tallas.
+- Eliminar pedidos con confirmación escrita; elimina también sus pagos y gastos automáticos asociados, pero conserva gastos manuales.
+- Editar orden de surtido y eliminarla; si se elimina, revierte su gasto automático.
+- El costo total del pedido no puede quedar por debajo de los abonos recibidos.
+- Se recomienda hacer respaldo antes de operaciones destructivas.
